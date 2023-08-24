@@ -2,13 +2,13 @@ import './App.css';
 import Buttons, { NavBar } from './component/button';
 import Trial from './component/trial';
 
-const menus = ["Home", "Features", "Pricing"];
+const name = ["Gandu", "Gendubhai", "Ganjedi"];
 
 function App() {
   return (
     <>
-      <NavBar {...menus} />
-      <Trial />
+      <NavBar />
+      <Trial {...name} />
       <Buttons />
     </>
   )
