@@ -1,7 +1,7 @@
 import './App.css';
 import Buttons, { NavBar } from './component/button';
 import Trial from './component/trial';
-import Jay from './component/jay';
+import Jay from './component/heet';
 
 const name = ["Gandu", "Gendubhai", "Ganjedi"];
 
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <Trial {...name} />
       <Buttons />
-      <Jay/>
+      <Heet/>
     </>
   )
 }
