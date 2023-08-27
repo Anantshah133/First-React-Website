@@ -591,3 +591,101 @@ a.rn-btn:hover {
   font-size: 15px;
   transition: .3s;
 }
+
+ul.testimonial-thumb-wrapper{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 510px;
+  margin: 0 auto -30px;
+  outline: none;
+}
+ul.testimonial-thumb-wrapper li {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-basis: 20%;
+  margin-bottom: 30px;
+  outline: none;
+  cursor: pointer;
+}
+ul.testimonial-thumb-wrapper li .thumb {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+ul.testimonial-thumb-wrapper li.react-tabs__tab--selected .thumb img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+}
+ul.testimonial-thumb-wrapper li .thumb img {
+  border-radius: 6px;
+  width: 100%;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+ul.testimonial-thumb-wrapper li.react-tabs__tab--selected .thumb:after {
+  opacity: 1;
+  transform: scale(1);
+}
+ul.testimonial-thumb-wrapper li .thumb img:hover {
+  transform: scale(1.1);
+  object-fit: contain;
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+}
+ul.testimonial-thumb-wrapper li .thumb:after {
+  width: 13px;
+  height: 13px;
+  background: #f9004d;
+  right: -8.5px;
+  top: -8.5px;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.react-tabs__tab-panel.react-tabs__tab-panel--selected .rn-testimonial-content {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+.rn-testimonial-content {
+  filter: blur(30px);
+  opacity: 0;
+  transform: scale(.2);
+  transition: opacity .4s cubic-bezier(.82,0,.12,1) .2s;
+  transition: all .4s cubic-bezier(.82,0,.12,1) .2s;
+}
+.rn-testimonial-content .inner {
+  padding-bottom: 62px;
+}
+.rn-testimonial-content .author-info {
+  margin-bottom: 50px;
+}
+.rn-testimonial-content .inner p {
+  font-size: 36px;
+  line-height: 58px;
+  color: #18181b;
+  font-weight: 500;
+  padding: 0 9%;
+  margin-bottom: 0;
+  margin-top: -16px;
+  position: relative;
+  z-index: 2;
+}
+.rn-testimonial-content .author-info h6 {
+  font-size: 18px;
+  line-height: 50px;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.rn-testimonial-content .author-info h6 span {
+  color: #18181b;
+  text-transform: uppercase;
+}

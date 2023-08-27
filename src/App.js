@@ -5,6 +5,7 @@ import ServicesArea from './web-components/services-area';
 import PortfolioArea from './web-components/portfolio-area';
 import CounterSection from './web-components/rn-counterup-area';
 import TeamArea from './web-components/rn-team-area';
+import Testimonial from './web-components/rn-testimonials';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PortfolioArea />
       <CounterSection />
       <TeamArea />
+      <Testimonial />
     </>
   )
 }
